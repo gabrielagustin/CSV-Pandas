@@ -19,9 +19,7 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 
-
-
-directory = "/home/gag/Escritorio/Extract/"
+directory = "/.../"
 arr = os.listdir(directory)
 big_frame = pd.DataFrame()
 # for i in range(0, len(arr)):
@@ -45,32 +43,5 @@ result = result.reset_index(drop=True)
 result.to_csv("../DataSet.csv", decimal = ",")
 print("Archivo año completo creado con exito!")
 
-print(list(result))
-# print(result['/Brightness_Temperature/toa_v'])
-
-result.set_index('Date',inplace=True)
-
-# fig, ax = plt.subplots()
-# # plt.plot(result['/Brightness_Temperature/tb_h'], label='tb_h')
-# # result.plot(kind='scatter',x=result.index, y='/Brightness_Temperature/tb_h')
-# result.plot(kind='scatter',x=result.index, y='/Brightness_Temperature/tb_h')
-# plt.legend(loc='upper left')
-
-
-fig, ax = plt.subplots()
-ax = result.plot.scatter(x= index, y='/Brightness_Temperature/tb_h', label='tb_h')
-plt.legend(loc='upper left')
-plt.xticks(rotation=45)
-
-# fig, ax = plt.subplots()
-# plt.plot(result['/Brightness_Temperature/tb_v'], label='tb_v')
-# plt.legend(loc='upper left')
-
-# fig, ax = plt.subplots()
-# plt.plot(result['/Brightness_Temperature/toa_v'], label='toa_v')
-# plt.legend(loc='upper left')
-
-
-plt.show()
 
           
