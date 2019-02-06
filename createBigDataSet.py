@@ -19,6 +19,8 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 
+
+
 directory = "/.../"
 arr = os.listdir(directory)
 big_frame = pd.DataFrame()
@@ -40,8 +42,12 @@ for i in range(0, 1):
 
 result = big_frame.sort_values(by=['Date'])
 result = result.reset_index(drop=True)
-result.to_csv("../DataSet.csv", decimal = ",")
+result.set_index('Date',inplace=True)
+print(list(result))
+result.to_csv("/.../DataSet.csv", decimal = ",")
 print("Archivo año completo creado con exito!")
 
 
+
+          
           
