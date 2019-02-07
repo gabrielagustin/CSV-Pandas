@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img width=300 src="../temporalVariationPlot.png"/>
+  <img width=300 src="temporalVariationPlot.png"/>
  </p>
 
 
