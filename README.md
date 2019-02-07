@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img width=300 src="CSV-Pandas/temporalVariationPlot.png"/>
+  <img width=300 src="../CSV-Pandas/temporalVariationPlot.png"/>
  </p>
 
 
