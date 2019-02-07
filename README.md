@@ -4,11 +4,11 @@
 
 
 <p align="center">
-  <img width=500 src="temporalVariationPlot.png"/>
+  <img width=750 src="correlationMatrix.png"/>
  </p>
 
 <p align="center">
-  <img width=500 src="temporalVariationPlot.png"/>
+  <img width=750 src="temporalVariationPlot.png"/>
  </p>
 
 
