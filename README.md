@@ -13,6 +13,13 @@ Evolución temporal:
  </p>
 
 
+Boxplot chart:
+<p align="center">
+  <img width=850 src="boxPlot.png"/>
+ </p>
+
+
+
 Dependences:
 
     Pandas
