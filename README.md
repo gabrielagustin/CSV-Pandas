@@ -29,3 +29,6 @@ Dependences:
     python - Seaborn
     python - Scipy - stats
 
+
+Pages source:
+ https://seaborn.pydata.org/
