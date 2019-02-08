@@ -22,10 +22,10 @@ Boxplot chart:
 
 Dependences:
 
-    Pandas
-    NumPy
-    Matplolib
-    Numpy
-    Seaborn
-    Scipy - stats
+    python - Pandas
+    python - NumPy
+    python - Matplolib
+    python - Numpy
+    python - Seaborn
+    python - Scipy - stats
 
