@@ -18,3 +18,7 @@ Dependences:
     Pandas
     NumPy
     Matplolib
+    Numpy
+    Seaborn
+    Scipy - stats
+
