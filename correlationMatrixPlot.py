@@ -58,7 +58,7 @@ def cor_matrix(df):
 
 if __name__== "__main__":
   path = "/.../"
-  nameFile = "extract_table_2.csv"
+  nameFile = "file.csv"
   file = path+nameFile
 
   data = pd.read_csv(file, sep=',', decimal=",")
