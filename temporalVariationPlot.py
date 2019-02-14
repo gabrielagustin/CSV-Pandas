@@ -20,9 +20,6 @@ if __name__== "__main__":
 
     path = "/.../"
     nameFile = "file.csv"
-
-    path = "/media/gag/Datos/Estancia_Italia_2018/Trabajo_Sentinel_NDVI_CONAE/mediciones_sensores_CONAE_MonteBuey_SMAP/SM_CONAE_Prom/"
-    nameFile = "extract_table_2.csv"
     file = path+nameFile
 
     data = pd.read_csv(file, sep=',', decimal=",")
