@@ -21,6 +21,12 @@ Boxplot chart:
  </p>
 
 
+Plot mean and standard deviation:
+<p align="center">
+  <img width=850 src="mean_and_std.png"/>
+ </p>
+
+
 
 Dependences:
 
