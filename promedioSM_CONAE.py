@@ -6,7 +6,7 @@ Created on Tue Jun  5 06:42:18 2018
 @author: gag
 
 Script que lee multiples archivos .CSV con mediciones de humedad y temperatura de suelo
-y realiza el promedio en base al identificador del dispositivo. Luego, genera nuevos 
+y calcula el promedio en base al identificador del dispositivo. Luego, genera nuevos 
 archivos .CSV con los promedios de las variables. 
 
 """
