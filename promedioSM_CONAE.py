@@ -4,6 +4,11 @@
 Created on Tue Jun  5 06:42:18 2018
 
 @author: gag
+
+Script que lee multiples archivos .CSV con mediciones de humedad y temperatura de suelo
+y realiza el promedio en base al identificador del dispositivo. Luego, genera nuevos 
+archivos .CSV con los promedios de las variables. 
+
 """
 
 import pandas as pd
@@ -14,13 +19,8 @@ import numpy as np
 dir = "gag"
 
 
-#file = "/media/"+dir+"/TOURO Mobile/Trabajo_Sentinel_NDVI_CONAE/Modelo/mapasCreados/Etapa1/tabla_extract.csv"
-#data = pd.read_csv(file, sep=',', decimal=",")
-#
-#print data
-
-pathIN = "/home/gag/Escritorio/mediciones_sensoresHPII_160415-050715_MB/"
-pathOUT = "/home/gag/Escritorio/mediciones_sensoresHPII_160415-050715_MB/SM_CONAE_Prom/"
+pathIN = "/home/"+dir+"/Escritorio/mediciones_sensoresHPII_160415-050715_MB/"
+pathOUT = "/home/"+dir+"/Escritorio/mediciones_sensoresHPII_160415-050715_MB/SM_CONAE_Prom/"
 
 for cosa in listdir(pathIN):
     if os.path.splitext(cosa)[-1] == '.csv':
