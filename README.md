@@ -1,7 +1,5 @@
 # CSV-Pandas
-.CSV files read, load as Pandas object and plot
 
-Description:
 Different graphs obtained using dataset stored in .CSV files are presented. The files are read using Pandas and are graphed through the Seaborn library and Pandas grouping operations.
 
 Correlation matrix plot: 
