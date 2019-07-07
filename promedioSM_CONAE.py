@@ -5,9 +5,9 @@ Created on Tue Jun  5 06:42:18 2018
 
 @author: gag
 
-Script que lee multiples archivos .CSV con mediciones de humedad y temperatura de suelo
-y calcula el promedio en base al identificador del dispositivo. Luego, genera nuevos 
-archivos .CSV con los promedios de las variables. 
+Script that reads multiple .CSV files with soil moisture and temperature measurements and
+calculates the average based on the device identifier. Then, it generates new .CSV files 
+with the averages of the variables.
 
 """
 
@@ -16,8 +16,7 @@ from os import listdir
 import os
 import numpy as np
 
-dir = "gag"
-
+dir = "..."
 
 pathIN = "/home/"+dir+"/Escritorio/mediciones_sensoresHPII_160415-050715_MB/"
 pathOUT = "/home/"+dir+"/Escritorio/mediciones_sensoresHPII_160415-050715_MB/SM_CONAE_Prom/"
@@ -49,3 +48,5 @@ for cosa in listdir(pathIN):
 #        print(df)
         df.to_csv(pathOUT + nom, decimal = ",")
         print("Archivo creado con exito!" + str(nom))
+
+

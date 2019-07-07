@@ -4,9 +4,12 @@
 Created on Wed Jun  6 05:57:59 2018
 
 @author: gag
+
+Script that reads a .CSV file with measurements of different variables,
+converts the range of each variables and obtains the graph of temporal evolution
+
 """
 
-# -*- coding: utf-8 -*-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
