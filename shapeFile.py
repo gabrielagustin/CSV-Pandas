@@ -5,7 +5,9 @@ Created on Mon Jul  31 06:42:18 2017
 
 @author: gag
 
-
+Script that reads multiple .SHP files with humidity and soil temperature measurements. 
+A set of previously identified devices (ID) is read from each file. The average is calculated for
+each device based on the ID and a new .SHP file is generated with this new information
 
 """
 

@@ -34,6 +34,7 @@ Dependences:
     python - Numpy
     python - Seaborn
     python - Scipy - stats
+    python - shapefile
 
 
 Pages source:
