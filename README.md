@@ -1,6 +1,7 @@
 # CSV-Pandas
 
 Different graphs obtained using dataset stored in .CSV files are presented. The files are read using Pandas and are graphed through the Seaborn library and Pandas grouping operations.
+A set of shape files is also processed to obtain hydro-environmental variables.
 
 Correlation matrix plot: 
 <p align="center">

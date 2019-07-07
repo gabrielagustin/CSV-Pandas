@@ -4,6 +4,9 @@
 Created on Wed Jun  6 05:57:59 2018
 
 @author: gag
+
+Script that allows to graph the correlation diagram of a set of variables stored in a pandas object
+
 """
 
 import pandas as pd
@@ -34,26 +37,35 @@ def annotate_colname(x, **kws):
               fontweight='bold', size=12)
 
 def cor_matrix(df):
-  g = sns.PairGrid(df, diag_sharey=False)
-  # Use normal regplot as `lowess=True` doesn't provide CIs.
-  #g.map_upper(sns.regplot, scatter_kws={'s':10})
-  g.map_lower(sns.regplot, scatter_kws={'s':5})
-  g.map_diag(sns.distplot, bins=20)
-  #g.map_offdiag(plt.scatter);
-  #g.map_diag(plt.hist)
-  #g.map_diag(sns.kdeplot)
-  #g.map_diag(annotate_colname)
-  #g.map_lower(sns.kdeplot, cmap='Blues_d')
-  #g.map_lower(corrfunc)
-  g.map_upper(corrfunc)
-  # Remove axis labels, as they're in the diagonals.
-  #for ax in g.axes.flatten():
+    """ Function that calculates the correlation matrix of a set of variables
+    Parameters:
+    -----------
+    Pandas DataFrame: a set of variables to plot
+    Returns: 
+    --------
+    grid : PairGrid(from Seaborn)
+    """
+
+    g = sns.PairGrid(df, diag_sharey=False)
+    # Use normal regplot as `lowess=True` doesn't provide CIs.
+    #g.map_upper(sns.regplot, scatter_kws={'s':10})
+    g.map_lower(sns.regplot, scatter_kws={'s':5})
+    g.map_diag(sns.distplot, bins=20)
+    #g.map_offdiag(plt.scatter);
+    #g.map_diag(plt.hist)
+    #g.map_diag(sns.kdeplot)
+    #g.map_diag(annotate_colname)
+    #g.map_lower(sns.kdeplot, cmap='Blues_d')
+    #g.map_lower(corrfunc)
+    g.map_upper(corrfunc)
+    # Remove axis labels, as they're in the diagonals.
+    #for ax in g.axes.flatten():
     #ax.set_ylabel('')
     #ax.set_xlabel('')
-#  g.fig.tight_layout()
-  g.axes[0,0].set_ylim(0,50)
+    #  g.fig.tight_layout()
+    g.axes[0,0].set_ylim(0,50)
 
-  return g
+    return g
 
 
 if __name__== "__main__":
